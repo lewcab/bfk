@@ -1,10 +1,10 @@
-name: Actions 😎
+name: Build
 
 on: [push, pull_request]
 
 jobs:
-  build:
-    name: Build my project ✨
+  buildWebGL:
+    name: Build for WebGL
     runs-on: ubuntu-latest
     steps:
       # Checkout (without LFS)
@@ -37,7 +37,7 @@ jobs:
             Library-
 
       # Build
-      - name: Build project
+      - name: Build Project
         uses: game-ci/unity-builder@v4
         env:
           UNITY_LICENSE: ${{ secrets.UNITY_LICENSE }}
@@ -49,5 +49,6 @@ jobs:
       # Output
       - uses: actions/upload-artifact@v4
         with:
-          name: Build
-          path: build
+          name: Build-WebGL
+          path: build/WebGL
+
