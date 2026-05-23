@@ -171,6 +171,7 @@ GameObject:
   - component: {fileID: 5403262859958261705}
   - component: {fileID: 6628581132541528074}
   - component: {fileID: 3665409421246238271}
+  - component: {fileID: 4791668260213290253}
   m_Layer: 7
   m_Name: Safe Handle
   m_TagString: Untagged
@@ -281,7 +282,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.45}
-  m_ConnectedAnchor: {x: -0.4, y: -0.4545455}
+  m_ConnectedAnchor: {x: -0.4000001, y: -0.4545456}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -342,6 +343,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4791668260213290253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4881132860338278848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea22e302c89f4d4d9dab282a7d26c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spring_constant: 150
+  damping_constant: 45
+  max_distance: 0
+  draw_debug_input: 1
+  draw_debug_force: 1
 --- !u!1 &5241118151984613695
 GameObject:
   m_ObjectHideFlags: 0
@@ -389,6 +407,7 @@ GameObject:
   - component: {fileID: 6938156354932810472}
   - component: {fileID: 8529608144678923489}
   - component: {fileID: 6556511306620826910}
+  - component: {fileID: 3266074615809740302}
   m_Layer: 7
   m_Name: Bite Handle
   m_TagString: Untagged
@@ -499,7 +518,7 @@ HingeJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 1
   m_Anchor: {x: 0, y: 0.45}
-  m_ConnectedAnchor: {x: 0.4000001, y: -0.4545455}
+  m_ConnectedAnchor: {x: 0.3999999, y: -0.4545456}
   m_UseMotor: 0
   m_Motor:
     m_MotorSpeed: 0
@@ -560,3 +579,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &3266074615809740302
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049661051901420455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eea22e302c89f4d4d9dab282a7d26c43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spring_constant: 150
+  damping_constant: 45
+  max_distance: 0
+  draw_debug_input: 1
+  draw_debug_force: 1
