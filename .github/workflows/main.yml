@@ -73,5 +73,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.8.0
         with:
           branch: gh-pages
-          folder: build
+          folder: build/WebGL
 
